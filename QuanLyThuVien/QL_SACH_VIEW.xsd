@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QL_SACH_VIEW" targetNamespace="http://tempuri.org/QL_SACH_VIEW.xsd" xmlns:mstns="http://tempuri.org/QL_SACH_VIEW.xsd" xmlns="http://tempuri.org/QL_SACH_VIEW.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Quan_Ly_Thu_VienConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Quan_Ly_Thu_VienConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QuanLyThuVien.Properties.Settings.GlobalReference.Default.Quan_Ly_Thu_VienConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VIEW_BOOKSTableAdapter" GeneratorDataComponentClassName="VIEW_BOOKSTableAdapter" Name="VIEW_BOOKS" UserDataComponentName="VIEW_BOOKSTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Quan_Ly_Thu_VienConnectionString (Settings)" DbObjectName="Quan_Ly_Thu_Vien.dbo.VIEW_BOOKS" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT book_id, book_title, publication_number, copy_number, publication_year, paper_size, page_count, publisher, price, has_cd, status FROM dbo.VIEW_BOOKS</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="book_id" DataSetColumn="book_id" />
+              <Mapping SourceColumn="book_title" DataSetColumn="book_title" />
+              <Mapping SourceColumn="publication_number" DataSetColumn="publication_number" />
+              <Mapping SourceColumn="copy_number" DataSetColumn="copy_number" />
+              <Mapping SourceColumn="publication_year" DataSetColumn="publication_year" />
+              <Mapping SourceColumn="paper_size" DataSetColumn="paper_size" />
+              <Mapping SourceColumn="page_count" DataSetColumn="page_count" />
+              <Mapping SourceColumn="publisher" DataSetColumn="publisher" />
+              <Mapping SourceColumn="price" DataSetColumn="price" />
+              <Mapping SourceColumn="has_cd" DataSetColumn="has_cd" />
+              <Mapping SourceColumn="status" DataSetColumn="status" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QL_SACH_VIEW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="QL_SACH_VIEW" msprop:Generator_DataSetName="QL_SACH_VIEW">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VIEW_BOOKS" msprop:Generator_RowEvHandlerName="VIEW_BOOKSRowChangeEventHandler" msprop:Generator_RowDeletedName="VIEW_BOOKSRowDeleted" msprop:Generator_RowDeletingName="VIEW_BOOKSRowDeleting" msprop:Generator_RowEvArgName="VIEW_BOOKSRowChangeEvent" msprop:Generator_TablePropName="VIEW_BOOKS" msprop:Generator_RowChangedName="VIEW_BOOKSRowChanged" msprop:Generator_RowChangingName="VIEW_BOOKSRowChanging" msprop:Generator_TableClassName="VIEW_BOOKSDataTable" msprop:Generator_RowClassName="VIEW_BOOKSRow" msprop:Generator_TableVarName="tableVIEW_BOOKS" msprop:Generator_UserTableName="VIEW_BOOKS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="book_id" msprop:Generator_ColumnPropNameInRow="book_id" msprop:Generator_ColumnPropNameInTable="book_idColumn" msprop:Generator_ColumnVarNameInTable="columnbook_id" msprop:Generator_UserColumnName="book_id" type="xs:int" />
+              <xs:element name="book_title" msprop:Generator_ColumnPropNameInRow="book_title" msprop:Generator_ColumnPropNameInTable="book_titleColumn" msprop:Generator_ColumnVarNameInTable="columnbook_title" msprop:Generator_UserColumnName="book_title" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="publication_number" msprop:Generator_ColumnPropNameInRow="publication_number" msprop:Generator_ColumnPropNameInTable="publication_numberColumn" msprop:Generator_ColumnVarNameInTable="columnpublication_number" msprop:Generator_UserColumnName="publication_number" type="xs:int" />
+              <xs:element name="copy_number" msprop:Generator_ColumnPropNameInRow="copy_number" msprop:Generator_ColumnPropNameInTable="copy_numberColumn" msprop:Generator_ColumnVarNameInTable="columncopy_number" msprop:Generator_UserColumnName="copy_number" type="xs:int" minOccurs="0" />
+              <xs:element name="publication_year" msprop:Generator_ColumnPropNameInRow="publication_year" msprop:Generator_ColumnPropNameInTable="publication_yearColumn" msprop:Generator_ColumnVarNameInTable="columnpublication_year" msprop:Generator_UserColumnName="publication_year" type="xs:int" minOccurs="0" />
+              <xs:element name="paper_size" msprop:Generator_ColumnPropNameInRow="paper_size" msprop:Generator_ColumnPropNameInTable="paper_sizeColumn" msprop:Generator_ColumnVarNameInTable="columnpaper_size" msprop:Generator_UserColumnName="paper_size" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="page_count" msprop:Generator_ColumnPropNameInRow="page_count" msprop:Generator_ColumnPropNameInTable="page_countColumn" msprop:Generator_ColumnVarNameInTable="columnpage_count" msprop:Generator_UserColumnName="page_count" type="xs:int" minOccurs="0" />
+              <xs:element name="publisher" msprop:Generator_ColumnPropNameInRow="publisher" msprop:Generator_ColumnPropNameInTable="publisherColumn" msprop:Generator_ColumnVarNameInTable="columnpublisher" msprop:Generator_UserColumnName="publisher" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="price" msprop:Generator_ColumnPropNameInRow="price" msprop:Generator_ColumnPropNameInTable="priceColumn" msprop:Generator_ColumnVarNameInTable="columnprice" msprop:Generator_UserColumnName="price" type="xs:decimal" minOccurs="0" />
+              <xs:element name="has_cd" msprop:Generator_ColumnPropNameInRow="has_cd" msprop:Generator_ColumnPropNameInTable="has_cdColumn" msprop:Generator_ColumnVarNameInTable="columnhas_cd" msprop:Generator_UserColumnName="has_cd" type="xs:boolean" minOccurs="0" />
+              <xs:element name="status" msprop:Generator_ColumnPropNameInRow="status" msprop:Generator_ColumnPropNameInTable="statusColumn" msprop:Generator_ColumnVarNameInTable="columnstatus" msprop:Generator_UserColumnName="status" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VIEW_BOOKS" />
+      <xs:field xpath="mstns:book_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
